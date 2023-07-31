@@ -1,0 +1,12 @@
+{% extends 'aplicacion/inicio.html'%}
+{% block titulo %}
+{% endblock titulo %}
+{% block contenido %}
+<ul>
+   {% for M in machines %}
+     <li style="color:whitesmoke"><h3>{{ M.nombre }} - {{ M.precio }} pesos</li></h3>
+   {% endfor %}
+</ul>
+{% endblock contenido %}
+{% block botones %}
+{% endblock botones %}

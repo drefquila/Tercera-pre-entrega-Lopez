@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'aplicacion/inicio.html'%}
+{% block titulo %}
+{% endblock titulo %}
+{% block contenido %}
+<ul>
+   {% for I in implements %}
+     <li style="color:whitesmoke"><h3>{{ I.nombre }} - {{ I.precio }} pesos</li></h3>
+   {% endfor %}
+</ul> 
+{% endblock contenido %}
+{% block botones %}
+{% endblock botones %}

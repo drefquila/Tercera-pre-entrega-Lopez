@@ -1,0 +1,102 @@
+.imagen-contenedor {
+    position: relative;
+    text-align: center;
+}
+
+.titulo-sobre-imagen {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(58, 8, 174, 0.532);
+    padding: 10px;
+    color: rgb(218, 224, 220);
+    font-size: 24px;
+}
+
+.contenido-sobre-imagen {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boton-crear {
+    position: absolute;
+    top: 55%;
+    left: 31%;
+    transform: translateX(-50%);
+}
+
+.boton-crear a {
+    display: inline-block;
+    background-color: #4d0579;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton-crear a:hover {
+    background-color: #0056b3;
+}
+
+.boton-buscar {
+    position: absolute;
+    top: 56%;
+    right: 32%;
+    transform: translateX(50%);
+}
+
+.boton-buscar .boton {
+    padding: 10px 20px;
+    font-size: 31px;
+    background-color: #4d0579;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton-buscar .boton:hover {
+    background-color: #0056b3;
+}
+
+.boton-buscar .boton:hover {
+    background-color: #0056b3;
+}
+
+
+.botones-contenedor {
+    text-align: center;
+    margin-top: 20px;/
+}
+
+.botones-contenedor {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+.botones boton {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color: #0f720a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: #0056b3;
+}

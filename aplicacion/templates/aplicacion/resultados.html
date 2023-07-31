@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda</title>
+</head>
+<body style="background-color: darkslateblue;">
+    <h1>Resultados de Búsqueda</h1>
+    <ul>
+        {% for r in resultados %}
+        <li style="color:green"><h1>{{ r.nombre }} {{ r.precio }} pesos</li></h1>
+        {% endfor %}
+    </ul>
+</body>
+</html>

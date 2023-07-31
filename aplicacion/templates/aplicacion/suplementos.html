@@ -1,0 +1,12 @@
+{% extends 'aplicacion/inicio.html'%}
+{% block titulo %}
+{% endblock titulo %}
+{% block contenido %}
+    <ul>
+        {% for S in supplements %}
+          <li style="color:whitesmoke"><h3>{{ S.nombre }} - {{ S.precio }} pesos</li></h3>
+        {% endfor %}
+     </ul>
+{% endblock contenido %}
+{% block botones %}
+{% endblock botones %}

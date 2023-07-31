@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear objeto nuevo</title>
+</head><h2>Crea un nuevo objeto</h2>
+<body style="background-color: darkslateblue;">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ forms.as_table }}
+        </table>
+        <p><input type="submit" value="crear">
+    </form> 
+</body>
+</html>

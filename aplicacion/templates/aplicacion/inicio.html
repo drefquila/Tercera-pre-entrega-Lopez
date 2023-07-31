@@ -1,0 +1,42 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'aplicacion/css/estilo.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="imagen-contenedor">
+        <img src="{% static 'aplicacion/imagenes/cabecera.jpg' %}" alt="Imagen de ejemplo">
+        {% block titulo %}
+        <div class="titulo-sobre-imagen">
+          <h1 style="color:rgb(247, 249, 247)">Tienda fitness</h1>
+        </div>
+        {% endblock %}
+        <div class="contenido-sobre-imagen">
+            {% block contenido %}
+              <h2 style="color:green">Aqui va el contenido de los objetos</h2>
+            {% endblock %}            
+        </div>
+        {% block botones %}
+        <div class="boton-crear">
+            <a href="{% url 'crearobjeto' %}" class="boton">Crear objeto</a>
+        </div>
+
+        <div class="boton-buscar">
+            <a href="{% url 'encontrar' %}" class="boton">Buscar objeto</a>
+        </div>
+
+        <div class="botones-contenedor">
+          <div class="botones">
+            <a href="{% url 'maquinas' %}"><boton>Maquinaria</boton></a>
+            <a href="{% url 'implementos' %}"><boton>Implementos</boton></a>
+            <a href="{% url 'suplementos' %}"><boton>Suplementos</boton></a>
+           </div>
+        </div>
+        {% endblock botones %}
+    </div>    
+</body>
+</html>
